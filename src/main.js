@@ -47,3 +47,11 @@ window.addEventListener('scroll', function () {
 btnUp.addEventListener('click', function () {
   window.scrollTo(0, 0);
 });
+
+function myFunction() {
+  const x = document.querySelector('nav');
+  x.classList.toggle('responsive');
+  const icon = document.querySelector('#hamburgerIcon i');
+  icon.classList.toggle('fa-xmark');
+  icon.classList.toggle('fa-bars');
+}
